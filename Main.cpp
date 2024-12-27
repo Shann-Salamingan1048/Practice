@@ -2,8 +2,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-void createWindows() // How to create window in openGL
+
+int main()
 {
+
 	glfwInit();
 
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -15,7 +17,7 @@ void createWindows() // How to create window in openGL
 	{
 		std::cout << "Failed to create GLFW window\n";
 		glfwTerminate();
-		return; // return -1;
+		return -1; // return -1;
 	}
 
 	glfwMakeContextCurrent(window);
@@ -34,13 +36,6 @@ void createWindows() // How to create window in openGL
 
 	glfwDestroyWindow(window);
 	glfwTerminate();
-
-}
-
-int main()
-{
-
-	createWindows();
 
 	return 0;
 }

@@ -139,8 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1. Create Windows\Main.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="1. Create Windows\Libraries\include\glad\glad.h" />
+    <ClInclude Include="1. Create Windows\Libraries\include\GLFW\glfw3.h" />
+    <ClInclude Include="1. Create Windows\Libraries\include\GLFW\glfw3native.h" />
+    <ClInclude Include="1. Create Windows\Libraries\include\KHR\khrplatform.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
