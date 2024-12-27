@@ -81,8 +81,31 @@ int main()
 
 
 	// Vertices coordinates
-	GLfloat vertices[] =
+	GLfloat vertices[] =  // x, y, z
 	{
+		/*
+		Formula for x and y:
+		((2 * desired Position)/ (Height or Width) ) - 1  
+		Example: 
+		((2 * 300) / 800)) - 1 = -0.25f = 300 position
+		results:
+		x = -1.0 -> left
+		x = 1.0 -> right
+
+		y = -1.0 -> bottom
+		y = 1.0 -> top
+
+		0.0 -> middle
+
+		Formula for z:
+		depth_z = the distance from the camera in world space
+		((2 * (depth_z - near)) / (far - near)) - 1
+
+		results: 
+		z = -1.0 closest to the camera 
+		z = 1.0 furthest from the camera
+
+		*/
 		-0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f, // Lower left corner
 		0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f, // Lower right corner
 		0.0f, 0.5f * float(sqrt(3)) * 2 / 3, 0.0f // Upper corner
