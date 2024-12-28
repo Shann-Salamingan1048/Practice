@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="1. Create Windows\Main.cpp" />
     <ClCompile Include="2. Triangles\Main.cpp" />
+    <ClCompile Include="3. Indices\Main.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
