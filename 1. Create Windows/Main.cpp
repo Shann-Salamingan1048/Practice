@@ -47,7 +47,6 @@ int main()
 	glfwSwapBuffers(window);
 
 
-
 	// Main while loop
 	while (!glfwWindowShouldClose(window))
 	{

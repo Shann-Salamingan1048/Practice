@@ -142,6 +142,16 @@
     <ClCompile Include="1. Create Windows\Main.cpp" />
     <ClCompile Include="2. Triangles\Main.cpp" />
     <ClCompile Include="3. Indices\Main.cpp" />
+    <ClCompile Include="4. Organizing\EBO.cpp" />
+    <ClCompile Include="4. Organizing\Main.cpp" />
+    <ClCompile Include="4. Organizing\shaderClass.cpp" />
+    <ClCompile Include="4. Organizing\VAO.cpp" />
+    <ClCompile Include="4. Organizing\VBO.cpp" />
+    <ClCompile Include="5. Shaders\Main.cpp" />
+    <ClCompile Include="5. Shaders\EBO.cpp" />
+    <ClCompile Include="5. Shaders\shaderClass.cpp" />
+    <ClCompile Include="5. Shaders\VAO.cpp" />
+    <ClCompile Include="5. Shaders\VBO.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
@@ -150,6 +160,20 @@
     <ClInclude Include="1. Create Windows\Libraries\include\GLFW\glfw3.h" />
     <ClInclude Include="1. Create Windows\Libraries\include\GLFW\glfw3native.h" />
     <ClInclude Include="1. Create Windows\Libraries\include\KHR\khrplatform.h" />
+    <ClInclude Include="4. Organizing\EBO.h" />
+    <ClInclude Include="4. Organizing\shaderClass.h" />
+    <ClInclude Include="4. Organizing\VAO.h" />
+    <ClInclude Include="4. Organizing\VBO.h" />
+    <ClInclude Include="5. Shaders\EBO.h" />
+    <ClInclude Include="5. Shaders\shaderClass.h" />
+    <ClInclude Include="5. Shaders\VAO.h" />
+    <ClInclude Include="5. Shaders\VBO.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="4. Organizing\default.frag" />
+    <None Include="4. Organizing\default.vert" />
+    <None Include="5. Shaders\default.frag" />
+    <None Include="5. Shaders\default.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
